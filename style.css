@@ -1,0 +1,235 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Shorai Sans', Arial, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%; 
+}
+
+@font-face{
+    font-family: 'Shorai Sans';
+    src: url(fonts/ShoraiSansStdNVar.ttf) format('truetype');
+    font-weight: 1 1000; 
+}
+
+h1{
+    margin-top: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0px;
+    line-height: 3rem;
+    font-size: 1.8rem;
+    color: #5F6267;
+}
+
+.google-ads-text_h1{
+    font-size: 5.2rem;
+
+    @media(max-width: 500px){
+        font-size: 4.4rem;
+    }
+
+    @media(max-width: 400px){
+        font-size: 3.8rem;
+    }
+}
+
+h2{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.blue-h2{
+    color: #4285F4;
+    margin-top: 40px;
+}
+
+h3{
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+p{
+    font-size: 1.7rem;
+    line-height: 2.6rem;
+}
+
+.google-logo span:nth-child(1) { color: #4285F4; }
+.google-logo span:nth-child(2) { color: #EA4335; }
+.google-logo span:nth-child(3) { color: #FBBC05; }
+.google-logo span:nth-child(4) { color: #4285F4; }
+.google-logo span:nth-child(5) { color: #34A853; }
+.google-logo span:nth-child(6) { color: #EA4335; }
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background-image: url(Media/Fixed-anime-girl-background.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-attachment: fixed;
+    position: relative;
+    z-index: 0;
+}
+
+.container{
+    border-radius: 15px;
+    margin: 30px 0px;
+    width: 80%; 
+    max-width: 1000px; 
+    padding: 30px;
+    box-shadow: 0px 0px 5px rgba(128, 128, 128, 0.251);
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+
+    @media(max-width: 700px){
+        padding: 20px;
+    }
+}
+
+.input-information-grid{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    gap: 40px;
+}
+
+.select-match-type {
+    position: sticky;
+    top: 60px;
+    order: 0;
+    background-color: #4285F4;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.input-result-info{
+    background-color: #4285F4;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+textarea{
+    border-radius: 5px;
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    resize: vertical; 
+    font-family: monospace;
+}
+
+.radioBtn label{
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    font-family: 'Shorai Sans', Arial, sans-serif;
+    margin-bottom: 2px;
+    color: #fff;
+}
+
+.radioBtn label:hover{
+    cursor: pointer;
+}
+
+input{
+    margin-right: 4px;
+}
+
+input:hover{
+    cursor: pointer;
+}
+
+button{
+    background-color: #fff;
+    color: #4285F4;
+    border: 2px #fff solid;
+    padding: 8px 20px;
+    margin-top: 15px; 
+    border-radius: 30px;
+    font-weight: 600;
+    transition: background 0.25s ease, color 0.25s ease;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #4285F4;
+    color: #fff;
+}
+
+iframe{
+    border-radius: 5px;
+}
+
+footer{
+    background-color: #4285F4;
+    text-align: center;
+    color: #fff;
+    padding: 16px;
+    border-radius: 0px 0px 10px 10px;
+    margin: 30px -30px -30px -30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transition: width 0.3s ease;
+  }
+  
+  a:hover::before {
+    width: 100%;
+  }
+
+
+@media (max-width: 1200px) {
+    .container {
+        width: 95%; 
+    }
+
+    .input-information-grid{
+        grid-template-columns: 1fr; 
+    }
+
+    .input-result-info_container{
+        order: 2;
+    }
+
+    .select-match-type_container{
+        order: 1;
+    }
+
+    .select-match-type {
+        position: static; /* Disable sticky on smaller screens */
+    }
+}

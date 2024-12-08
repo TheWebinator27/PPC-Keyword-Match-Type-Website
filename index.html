@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyword Match Type Tool • Google Ads PPC</title>
+    <link rel="icon" type="image/x-icon" href="Media/Keyword Match Type Tool Favicon (4).png">
+    <meta name="description" content="Free Keyword Wrapper Tool! Combine keywords, generate match types (broad, phrase, exact), and optimize your Google Ads campaigns for better results." />
+    <meta property="og:locale" content="en_GB"/>
+    <meta property="og:title" content="Keyword Match Type Tool - PPC • Google Ads"/>
+    <meta property="og:url" content="https://keywordmatchtool.com/" />
+    <meta property="og:site_name" content="Google Ads Keyword Match Type Tool" />
+    <link rel="canonical" href="https://keywordmatchtool.com/">
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <!--Javascript-->
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <section class="container">
+        <h1>
+            <span class="google-ads-text_h1">
+                <span class="google-logo">
+                    <span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span>
+                </span> Ads
+            </span>
+            <br>
+            <span style="color:#4285F4">Keyword Match Type Tool</span>
+        </h1>
+
+        <div class="input-information-grid">
+            <div class="input-result-info_container">
+                <div class="input-result-info">
+                    <h2>Input</h2>
+                    <textarea placeholder="One keyword per line" spellcheck="false" name="inputBox" id="inputBox"></textarea>
+
+                    <h2>Result</h2>
+                    <textarea readonly placeholder="Result" spellcheck="false" name="outputBox" id="outputBox"></textarea>
+
+                    <button id="copyKeywordList">Copy Keyword List</button>
+                </div>
+
+                <h2 class="blue-h2">The SEO Rap</h2>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/loh6RlXrg88?si=q3v_fuUN0RRNQtgv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <h2 class="blue-h2">About Keyword Match Type Tool</h2>
+                <p>Tired of manually typing those pesky brackets and quotes for your Google Ads campaigns? Fear not, for the world's first Keyword Match Type Tool has arrived! Broad, phrase, exact – we got you covered, simply type your keywords into the input and click on "create keyword list" BOSH!</p>
+
+            </div>
+
+            <div class="select-match-type_container">
+                <div class="select-match-type">
+                    <h3>Select Match Type</h3>
+                    <div class="radioBtn">
+                        <label>
+                            <input type="radio" name="selectMatchType" id="broadMatch" value="1">
+                            Broad Match
+                        </label>
+                    </div>
+
+                    <div class="radioBtn">
+                        <label>
+                            <input type="radio" name="selectMatchType" id="modifiedBroadMatch" value="1">
+                            Modified Broad Match (+)
+                        </label>
+                    </div>
+
+                    <div class="radioBtn">
+                        <label>
+                            <input type="radio" name="selectMatchType" id="phraseMatch" value="1">
+                            "Phrase Match"
+                        </label>
+                    </div>
+
+                    <div class="radioBtn">
+                        <label>
+                            <input type="radio" name="selectMatchType" id="exactMatch" value="1">
+                            [Exact Match]
+                        </label>
+                    </div>
+
+                    <div class="radioBtn">
+                        <label>
+                            <input type="radio" name="makeKeywordsLowercase" id="makeKeywordsLowercase" value="1">
+                            Make Keywords Lowercase
+                        </label>
+                    </div>
+
+                    <button id="createKeywordList">Create Keyword List</button>
+                </div>
+            </div>
+        </div>
+
+    <footer>
+        <a href="https://visiblewebsites.io" target="_blank">Designed By Visible Websites</a>
+    </footer>
+    </section>
+</body>
+</html>
